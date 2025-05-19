@@ -1,0 +1,33 @@
+How to Run the FastAPI App:
+----------------------------
+1. Create and activate a virtual environment (optional but recommended):
+   python -m venv venv
+   venv\Scripts\activate
+
+2. Install FastAPI and Uvicorn:
+   pip install fastapi uvicorn
+
+3. Run the app:
+   uvicorn main:app --reload
+
+4. Open your browser and go to:
+   http://127.0.0.1:8000
+
+5. To test the endpoint, you should see:
+   {"message": "Hello, World!"}
+
+6. To use Pylint for code quality check:
+   pip install pylint
+   pylint main.py
+
+
+About FastAPI:
+--------------
+FastAPI is a modern, fast (high-performance) web framework for building APIs with Python.
+It uses Python type hints for validation, auto-generates documentation (Swagger), and is built on Starlette and Pydantic.
+
+
+About Pylint:
+-------------
+Pylint is a static code analysis tool that checks your Python code for errors, enforces a coding standard, and gives you a score out of 10.
+It helps you write cleaner and more maintainable code by pointing out issues like unused imports, naming conventions, and missing docstrings.
